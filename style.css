@@ -1,16 +1,18 @@
 /* shered styles  */
 /* font  */
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
 
 :root {
-    --pink :#FF42A5;
+    --pink: #FF42A5;
 }
-body{
+
+body {
     font-family: Work Sans;
     font-size: 18px;
 }
-h3{
+
+h3 {
     color: #0B0223;
     font-family: Work Sans;
     font-size: 45px;
@@ -18,16 +20,39 @@ h3{
     margin: 0;
 
 }
-ul{
+h2{
+    
+font-family: Work Sans;
+font-size: 95px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+text-transform: uppercase;
+margin: 0;
+}
+
+ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: #3C354F;
-text-align: center;
+    text-align: center;
 
-font-weight: 500;
-line-height: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.btn {
+    padding: 15px 30px;
+    border-radius: 48px;
+    border-width: 0;
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 
@@ -35,136 +60,296 @@ line-height: normal;
 .header-container {
     display: flex;
     justify-content: space-between;
+
     width: 80%;
-   
-    margin:20px auto;
+    margin: 20px auto;
 }
+
 .logo {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.logo img{
+.logo img {
     width: 86px;
     height: 40px;
 }
-.logo span{
+
+.logo span {
     color: var(--pink);
 }
+
 .navigation {
     display: flex;
-   
+
     gap: 30px;
     align-items: center;
 }
-.navigation ul{
+
+.navigation ul {
     display: flex;
-   
+
     margin: 0;
-    gap:30px;
+    gap: 30px;
     align-items: center;
 }
+
 .follow {
     display: flex;
     gap: 30px;
     align-items: center;
     border-radius: 8px;
-background: rgba(11, 2, 35, 0.10);
-padding: 10px 10px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 10px 10px;
 }
 
 
 /* responsive header for devices  */
-@media screen and (max-width:992px) and (min-width:768px){
+@media screen and (max-width:992px) and (min-width:768px) {
     .header-container {
-        
-      
+
+
         flex-direction: column;
         align-items: center;
         gap: 30px;
         width: 100%;
     }
-   
-    .logo span{
+
+    .logo span {
         color: var(--pink);
     }
+
     .navigation {
-       
+
         flex-direction: column;
         align-items: center;
     }
-    .navigation ul{
+
+    .navigation ul {
         display: flex;
         margin: 0;
-        gap:30px;
-       
+        gap: 30px;
+
         padding-left: 0;
     }
+
     .follow {
         display: flex;
         gap: 30px;
     }
 }
-@media screen and (max-width:768px) and (min-width:576px){
-    
+
+/* responsive header for devices  */
+@media screen and (max-width:768px) and (min-width:576px) {
+
     .header-container {
-        
-      
+
+
         flex-direction: column;
         align-items: center;
         gap: 30px;
     }
-   
-    .logo span{
+
+    .logo span {
         color: var(--pink);
     }
+
     .navigation {
-       
+
         flex-direction: column;
         align-items: center;
     }
-    .navigation ul{
+
+    .navigation ul {
         display: flex;
         margin: 0;
-        gap:30px;
-       
+        gap: 30px;
+
         padding-left: 0;
     }
+
     .follow {
         display: flex;
         gap: 30px;
     }
 }
-@media screen and (max-width:576px){
-    
+
+/* responsive header for devices  */
+@media screen and (max-width:576px) {
+
     .header-container {
-        
-      
+
+
         flex-direction: column;
         align-items: center;
         gap: 30px;
         width: 100%;
     }
-   
-    .logo span{
+
+    .logo span {
         color: var(--pink);
     }
+
     .navigation {
-       
+
         flex-direction: column;
         align-items: center;
     }
-    .navigation ul{
+
+    .navigation ul {
         display: flex;
         margin: 0;
-        gap:30px;
-       
+        gap: 30px;
+
         padding-left: 0;
     }
+
     .follow {
         display: flex;
         gap: 30px;
     }
 }
+
+/* play like section  */
+.play-like-text>p>img {
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+
+.play-like {
+    background-image: url('/images/Group14.png');
+
+}
+.play-like-container{
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    margin: 0px auto;
+}
+.play-like-text {
+   margin-top: 100px;
+   
+}
+
+
+
+.play-like-image {
+    width: 40%;
+}
+
+.play-like-image>img {
+    width: 100%;
+}
+
+.inside-pl-text>p>img {
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+
+.pl-btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+.play-like-text h2{
+    /* color: linear-gradient(180deg, #F948B2 0%, #8758F1 100%); */
+    background: -webkit-linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* responsive play-like section */
+@media  screen and (max-width:992px) and (min-width:768px) {
+    
+    
+    
+    .play-like-container{
+        
+        width: 100%;
+       
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    
+    
+    
+    .play-like-image {
+        width: 90%;
+    }
+    
+    .play-like-image>img {
+        width: 100%;
+    }
+    
+   
+    
+    
+    
+}
+@media  screen and (max-width:768px) and (min-width:576px){
+    .play-like-container{
+        
+        width: 100%;
+       
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    
+    
+    
+    .play-like-image {
+        width: 90%;
+    }
+    
+    .play-like-image>img {
+        width: 100%;
+    }
+    
+}
+@media  screen and (max-width:576px){
+    .play-like-container{
+        
+        width: 100%;
+       
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    
+    
+    
+    .play-like-image {
+        width: 90%;
+    }
+    
+    .play-like-image>img {
+        width: 100%;
+    }
+    .play-like-text h2{
+        font-size: 80px;
+    }
+    
+}
+/* we are gammer section  */
+.we-are-gamer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.wag-img{
+    width:60%;
+}
+.wag-img>img{
+    width:100%;
+}
+.wag-text{
+    width:40%
+}
+.wag-text *{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }

@@ -20,22 +20,23 @@ h3 {
     margin: 0;
 
 }
-h2{
-    
-font-family: Work Sans;
-font-size: 95px;
-font-style: normal;
-font-weight: 800;
-line-height: normal;
-text-transform: uppercase;
-margin: 0;
+
+h2 {
+
+    font-family: Work Sans;
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 ul {
     list-style: none;
 }
 
-a {
+a , span {
     text-decoration: none;
     color: #3C354F;
     text-align: center;
@@ -221,15 +222,17 @@ a {
     background-image: url('/images/Group14.png');
 
 }
-.play-like-container{
+
+.play-like-container {
     display: flex;
     justify-content: space-between;
-    width:80%;
+    width: 80%;
     margin: 0px auto;
 }
+
 .play-like-text {
-   margin-top: 100px;
-   
+    margin-top: 100px;
+
 }
 
 
@@ -252,138 +255,279 @@ a {
     justify-content: space-between;
     margin: 40px 0;
 }
-.play-like-text h2{
+
+.play-like-text h2 {
     /* color: linear-gradient(180deg, #F948B2 0%, #8758F1 100%); */
     background: -webkit-linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 /* responsive play-like section */
-@media  screen and (max-width:992px) and (min-width:768px) {
-    
-    
-    
-    .play-like-container{
-        
+@media screen and (max-width:992px) and (min-width:768px) {
+
+
+
+    .play-like-container {
+
         width: 100%;
-       
+
         flex-direction: column-reverse;
         align-items: center;
     }
-    
-    
-    
-    
+
+
+
+
     .play-like-image {
         width: 90%;
     }
-    
+
     .play-like-image>img {
         width: 100%;
     }
-    
-   
-    
-    
-    
+
+
+
+
+
 }
-@media  screen and (max-width:768px) and (min-width:576px){
-    .play-like-container{
-        
+
+@media screen and (max-width:768px) and (min-width:576px) {
+    .play-like-container {
+
         width: 100%;
-       
+
         flex-direction: column-reverse;
         align-items: center;
     }
-    
-    
-    
-    
+
+
+
+
     .play-like-image {
         width: 90%;
     }
-    
+
     .play-like-image>img {
         width: 100%;
     }
-    
+
 }
-@media  screen and (max-width:576px){
-    .play-like-container{
-        
+
+@media screen and (max-width:576px) {
+    .play-like-container {
+
         width: 100%;
-       
+
         flex-direction: column-reverse;
         align-items: center;
     }
-    
-    
-    
-    
+
+
+
+
     .play-like-image {
         width: 90%;
     }
-    
+
     .play-like-image>img {
         width: 100%;
     }
-    .play-like-text h2{
+
+    .play-like-text h2 {
         font-size: 80px;
     }
-    
+
 }
+
 /* we are gammer section  */
-.we-are-gamer{
+.we-are-gamer {
     width: 80%;
     margin: auto;
     display: flex;
 }
-.wag-img{
-    width:60%;
+
+.wag-img {
+    width: 60%;
 }
-.wag-img>img{
-    width:100%;
+
+.wag-img>img {
+    width: 100%;
 }
-.wag-text{
-    width:40%
+
+.wag-text {
+    width: 40%
 }
-.wag-text *{
+
+.wag-text * {
     text-align: right;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-.wag-text h3{
+
+.wag-text h3 {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.wag-text>p{
+
+.wag-text>p {
     color: #534C64;
-        text-align: right;
-        font-family: Work Sans;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 30px;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
 
 }
-.our-perpose{
+
+.our-perpose {
     color: #534C64;
-        text-align: right;
-        font-family: Work Sans;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 30px;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
 }
-.our-perpose>span{
+
+.our-perpose>p {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.our-perpose>span {
     color: #534C64;
-        font-family: Work Sans;
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 700;
-       
-        width:100%;
+    font-family: Work Sans;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+
+    width: 100%;
+}
+
+/* we are gammer responsive section  */
+@media screen and (max-width:992px) and (min-width:768px) {
+
+    .we-are-gamer {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wag-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wag-text h3 ,
+    .wag-text p{
+        text-align: center;
+    }
+
+    .wag-img {
+        width: 100%;
+    }
+
+    .our-perpose>p {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .our-perpose>span {
+
+        text-align: center;
+
+    }
+
+}
+
+@media screen and (max-width:768px) and (min-width:576px) {
+    .we-are-gamer {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wag-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wag-text h3,
+    .wag-text p {
+        text-align: center;
+    }
+
+    .wag-img {
+        width: 100%;
+    }
+
+    .our-perpose>p {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .our-perpose>span {
+
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width:576px) {
+    .we-are-gamer {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wag-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wag-text h3,.wag-text p {
+        text-align: center;
+    }
+
+    .wag-img {
+        width: 100%;
+    }
+
+    .our-perpose>p {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .our-perpose>span {
+
+        text-align: center;
+
+    }
 }

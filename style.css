@@ -6,6 +6,12 @@
 :root {
     --pink: #FF42A5;
 }
+@media screen and (max-width:576px) {
+
+    h3 {
+        font-size: 40px;
+    }
+}
 
 body {
     font-family: Work Sans;
@@ -36,7 +42,7 @@ ul {
     list-style: none;
 }
 
-a , span {
+a, span {
     text-decoration: none;
     color: #3C354F;
     text-align: center;
@@ -79,6 +85,8 @@ a , span {
 
 .logo span {
     color: var(--pink);
+    font-size: 45px;
+    font-weight: 700;
 }
 
 .navigation {
@@ -431,8 +439,8 @@ a , span {
         align-items: center;
     }
 
-    .wag-text h3 ,
-    .wag-text p{
+    .wag-text h3,
+    .wag-text p {
         text-align: center;
     }
 
@@ -510,7 +518,7 @@ a , span {
         align-items: center;
     }
 
-    .wag-text h3,.wag-text p {
+    .wag-text h3, .wag-text p {
         text-align: center;
     }
 
@@ -531,3 +539,396 @@ a , span {
 
     }
 }
+
+/* Funny video section  */
+section.funny-videos {
+    width: 100%;
+
+}
+
+.funny-videos>h3 {
+    color: #0B0223;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    max-width: 655px;
+    margin: 0 auto;
+
+
+}
+
+.funny-videos>h3>span {
+
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.funny-videos>p {
+
+    color: #534C64;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 655px;
+    margin: 0 auto;
+
+}
+
+.funny-videos>div {
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    justify-content: space-between;
+}
+
+.funny-videos>div>.fv1>div {
+    width: 100%;
+    height: 25vw;
+    border-radius: 16px;
+    background-image: url('images/funny-videos/Rectangle41.png');
+    background-size: cover;
+}
+
+.funny-videos>div>.fv2>div {
+    width: 100%;
+    height: 25vw;
+    border-radius: 16px;
+    background-image: url('images/funny-videos/Rectangle42.png');
+    background-size: cover;
+    
+}
+
+.funny-videos>div>.fv3>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25vw;
+    border-radius: 16px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('images/funny-videos/Rectangle43.png');
+    background-size: cover;
+}
+.fv3>div>p{
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-align: center;
+font-family: Work Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.funny-videos>div>.fv4>div {
+    width: 100%;
+    height: 25vw;
+    border-radius: 16px;
+    background-image: url('images/funny-videos/Rectangle44.png');
+    background-size: cover;
+}
+
+.funny-videos>div>div {
+    display: flex;
+    flex-direction: column;
+    width: 19vw;
+    
+}
+/* responsive funny-videos secton for medium devices  */
+@media screen and (max-width:992px) and (min-width:768px) {
+    .funny-videos>div {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .funny-videos>div>div {
+        align-items: center;
+        width: 80%;
+        
+        
+    }
+    .funny-videos>div>.fv1>div {
+       
+        height: 60vw;
+        
+    }
+    .funny-videos>div>.fv2>div {
+       
+        height: 60vw;
+        
+    }
+    .funny-videos>div>.fv3>div {
+       
+        height: 60vw;
+        
+    }
+    .funny-videos>div>.fv4>div {
+       
+        height: 60vw;
+        
+    }
+    
+}
+
+/* responsive funny-videos section for small devices  */
+@media screen and (max-width:768px) and (min-width:576px) {
+    .funny-videos>div {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .funny-videos>div>div {
+        align-items: center;
+        width: 80%;
+        
+        
+    }
+    .funny-videos>div>.fv1>div {
+       
+        height: 60vw;
+        
+    }
+    .funny-videos>div>.fv2>div {
+       
+        height: 60vw;
+        
+    }
+    .funny-videos>div>.fv3>div {
+       
+        height: 60vw;
+        
+    }
+    .funny-videos>div>.fv4>div {
+       
+        height: 60vw;
+        
+    }
+    
+}
+
+/*  responsive funny-videos section for ex-small devices */
+
+@media screen and (max-width:576px) {
+    .funny-videos>div {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .funny-videos>div>div {
+        align-items: center;
+        width: 80%;
+        
+        
+    }
+    .funny-videos>div>.fv1>div {
+       
+        height: 60vw;
+        
+    }
+    .funny-videos>div>.fv2>div {
+       
+        height: 60vw;
+        
+    }
+    .funny-videos>div>.fv3>div {
+       
+        height: 60vw;
+        
+    }
+    .funny-videos>div>.fv4>div {
+       
+        height: 60vw;
+        
+    }
+    
+}
+/* play instantly section  */
+section.play-instantly{
+     width:80%;
+     margin: 10px auto;
+    display:flex ;
+    gap: 150px;
+    justify-content: right;
+}
+.play-instantly>div{
+    display: flex;
+    flex-direction: column;
+
+}
+.play-instantly div:first-child{
+   height: 500px;
+   justify-content: center;
+}
+
+.play-instantly h3{
+    max-width: 350px;
+    text-align: right;
+font-family: Work Sans;
+font-size: 48px;
+font-weight: 700;
+line-height: 60px; 
+}
+.play-instantly h3:first-child{
+color:var(--pink);
+}
+.play-instantly p{
+    max-width: 350px;
+    text-align: right;
+}
+.play-instantly img:nth-child(1){
+    width: 35vw;
+    height: 35.5vw;
+}
+.play-instantly img:nth-child(2){
+    width: 20vw;
+    height: 23vw;
+    position: relative;
+    bottom: 15vw;
+    left: -8vw;
+}
+/* play .play-instantly responsive 
+ */
+ @media screen and (max-width:992px) and (min-width:768px) {
+    section.play-instantly{
+        flex-direction: column; 
+        gap: 0px;
+    }
+    .play-instantly>div {
+        height: 250px;
+        width: 100%;
+        margin: 0px auto 0 auto;
+       align-items: center; 
+    }
+    .play-instantly div:first-child{
+        height: 250px;
+        justify-content: default;
+
+     }
+     .play-instantly div:nth-child(2){
+        height: 250px;
+        justify-content: default;
+        margin-top: 50px;
+        
+     }
+     .play-instantly img:nth-child(2){
+        
+        left: -15vw;
+    }
+    .play-instantly p {
+        width: 80%;
+        text-align: center;
+    }
+    .play-instantly h3 {
+        width: 80%;
+        text-align: center;
+    }
+    .play-instantly img:nth-child(1) {
+        width: 80%;
+        height: auto;
+    }
+ }
+
+ @media screen and (max-width:768px) and (min-width:576px){
+    section.play-instantly{
+        flex-direction: column; 
+        gap: 0px;
+    }
+    .play-instantly>div {
+        height: 250px;
+        width: 100%;
+        margin: 0px auto 0 auto;
+       align-items: center; 
+    }
+    .play-instantly div:first-child{
+        height: 250px;
+        justify-content: default;
+
+     }
+     .play-instantly div:nth-child(2){
+        
+        justify-content: default;
+        margin-top: 50px;
+        
+     }
+     .play-instantly img:nth-child(1) {
+        width: 80%;
+        height: auto;
+    }
+    .play-instantly img:nth-child(2) {
+        width: 40%;
+        height: auto;
+        position: relative;
+        bottom: 20vw;
+        left: -30vw;
+        
+    }
+     
+    .play-instantly p {
+        width: 80%;
+        text-align: center;
+    }
+    .play-instantly h3 {
+        width: 80%;
+        text-align: center;
+    }
+    
+    
+ }
+ @media screen and (max-width:576px) {
+    section.play-instantly{
+        flex-direction: column; 
+        gap: 0px;
+    }
+    .play-instantly>div {
+        height: 250px;
+        width: 100%;
+        margin: 0px auto 0 auto;
+       align-items: center; 
+    }
+    .play-instantly div:first-child{
+        
+        justify-content: default;
+
+     }
+     .play-instantly div:nth-child(2){
+        
+        justify-content: default;
+        margin-top: 50px;
+        
+     }
+     .play-instantly img:nth-child(2) {
+        width: 40%;
+        height: auto;
+        position: relative;
+        bottom: 20vw;
+        left: -30vw;
+        
+    }
+    .play-instantly p {
+        width: 80%;
+        text-align: center;
+    }
+    .play-instantly h3 {
+        width: 100%;
+        text-align: center;
+    }
+    .play-instantly img:nth-child(1) {
+        width: 80%;
+        height: auto;
+        
+    }
+ }

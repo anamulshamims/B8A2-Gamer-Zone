@@ -618,7 +618,7 @@ section.funny-videos {
     width: 100%;
     height: 25vw;
     border-radius: 16px;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('images/funny-videos/Rectangle43.png');
+    background-image: url('images/funny-videos/Rectangle43.png');
     background-size: cover;
 }
 .fv3>div>p{
@@ -640,8 +640,25 @@ line-height: normal;
     border-radius: 16px;
     background-image: url('images/funny-videos/Rectangle44.png');
     background-size: cover;
+    
 }
+.funny-videos .hidden>img,.funny-videos .hidden>p{
+    visibility: hidden;
+    
+}
+.fv3:hover .hidden{
+    
+    border: 5px solid var(--pink);
+    
+}
+.fv3:hover .hidden>img{
+    visibility:visible;
+    
+}
+.fv3:hover .hidden>p{
+    visibility: visible;
 
+}
 .funny-videos>div>div {
     display: flex;
     flex-direction: column;

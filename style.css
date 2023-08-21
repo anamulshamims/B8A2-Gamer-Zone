@@ -63,7 +63,7 @@ a, span {
 }
 
 
-/* headear style section  */
+/* header style section  */
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -969,3 +969,17 @@ padding: 10px 10px;
     }
     
  }
+  /* footer section stylesheet  */
+ body{
+    background: black;
+ }
+ footer section{
+    display: flex;
+    width: 80%;
+    margin: auto;
+ }
+ footer .icon{
+    display: flex;
+    gap:20px;
+ }
+ 
